@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n1 = 0, n2 = 1, n3;
+    let i = 0;
+    let number = +prompt("nhap so");
+
+    function fibonaci() {
+
+        for (i; i < number; i++) {
+
+            n3 = n2 + n1;
+            n1 = n2;
+            n2 = n3;
+            if (n3 < number) {
+                document.write(n3 + " ")
+            }
+        }
+    }
+
+    fibonaci();
+
+</script>
+</body>
+</html>

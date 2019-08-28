@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let input = +prompt("Nhap so km :");
+
+    function taxiPay(mileage) {
+        if (mileage > 1 || mileage < 30) {
+            let moneyOne = 5000 + (mileage - 1) * 4000;
+            alert("So tien cua ban la : " + moneyOne);
+        } else {
+            let moneyTwo = 5000 + 29 * 4000 + (mileage - 30) * 3000
+            alert("So tien cua ban la : " + moneyTwo)
+        }
+    }
+
+    taxiPay(input);
+</script>
+</body>
+</html>

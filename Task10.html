@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [2,3,4,5,1,6,3,3];
+    let sum = 0;
+    function sumArray(arr) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 === 0){
+                sum += arr[i];
+            }
+        }
+        alert(sum);
+    }
+    sumArray(a)
+</script>
+</body>
+</html>

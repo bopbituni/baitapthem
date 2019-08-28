@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = [];
+    let arr2 = [];
+    let a = prompt("nhap so :");
+    function tachMang(arr) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 === 0) {
+                arr1.push(arr[i]);
+            } else {
+                arr2.push(arr[i]);
+            }
+        }
+        document.write(arr1 + "<br>");
+        document.write(arr2);
+    }
+
+    tachMang(a)
+</script>
+</body>
+</html>
